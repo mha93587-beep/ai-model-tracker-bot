@@ -23,6 +23,15 @@ from config import (
 )
 from database import is_item_seen, mark_item_seen, log_broadcast
 
+DEFAULT_BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"'
+}
+
 def is_recent_date(date_str: str, max_hours: int = MAX_AGE_HOURS) -> bool:
     """
     Check if a publication date / ISO timestamp is within the last `max_hours`.
@@ -245,7 +254,13 @@ def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
     all_feeds = AI_RSS_FEEDS + GITHUB_RELEASE_FEEDS
     for feed_info in all_feeds:
         try:
-            feed = feedparser.parse(feed_info["url"])
+            # Fetch with browser headers to avoid Cloudflare/403 blocks
+            try:
+                resp = requests.get(feed_info["url"], headers=DEFAULT_BROWSER_HEADERS, timeout=12)
+                feed = feedparser.parse(resp.content) if resp.status_code == 200 else feedparser.parse(feed_info["url"])
+            except Exception:
+                feed = feedparser.parse(feed_info["url"])
+                
             if not feed.entries:
                 continue
                 

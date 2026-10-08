@@ -79,25 +79,11 @@ AI_RSS_FEEDS = [
         "url": "https://engineering.fb.com/category/ai-research/feed/"
     },
     {
-        "name": "Microsoft AI Blog",
+        "name": "Microsoft Official Blog",
         "company": "Microsoft AI",
         "region": "🇺🇸 USA",
         "category": "Phi Series & Copilot",
-        "url": "https://blogs.microsoft.com/ai/feed/"
-    },
-    {
-        "name": "Microsoft Developer AI",
-        "company": "Microsoft AI",
-        "region": "🇺🇸 USA",
-        "category": "SLMs & Azure AI",
-        "url": "https://devblogs.microsoft.com/ai/feed/"
-    },
-    {
-        "name": "Mistral AI News",
-        "company": "Mistral AI",
-        "region": "🇪🇺 France",
-        "category": "Mistral & Open Frontier",
-        "url": "https://mistral.ai/news/rss.xml"
+        "url": "https://blogs.microsoft.com/feed/"
     },
     {
         "name": "Hugging Face Blog",
@@ -219,13 +205,12 @@ HF_TRACKED_ORGS = [
     {"org": "google", "company": "Google DeepMind / Gemma", "country": "🇺🇸 USA"},
     {"org": "microsoft", "company": "Microsoft AI / Phi", "country": "🇺🇸 USA"},
     {"org": "sarvamai", "company": "Sarvam AI", "country": "🇮🇳 India"},
-    {"org": "Krutrim-AI-Labs", "company": "Krutrim", "country": "🇮🇳 India"},
+    {"org": "krutrim-ai-labs", "company": "Krutrim", "country": "🇮🇳 India"},
     {"org": "ai4bharat", "company": "AI4Bharat", "country": "🇮🇳 India"},
     {"org": "black-forest-labs", "company": "Black Forest Labs (FLUX)", "country": "🇩🇪 Germany"},
     {"org": "stabilityai", "company": "Stability AI", "country": "🇬🇧 UK / 🇺🇸 USA"},
     {"org": "BAAI", "company": "BAAI (Beijing Academy of AI)", "country": "🇨🇳 China"},
-    {"org": "THUDM", "company": "Zhipu AI (GLM)", "country": "🇨🇳 China"},
-    {"org": "CohereForAI", "company": "Cohere", "country": "🇨🇦 Canada"},
+    {"org": "CohereLabs", "company": "Cohere", "country": "🇨🇦 Canada"},
     {"org": "nvidia", "company": "NVIDIA", "country": "🇺🇸 USA"},
     {"org": "apple", "company": "Apple", "country": "🇺🇸 USA"},
     {"org": "tiiuae", "company": "TII Falcon", "country": "🇦🇪 UAE"}
