@@ -147,6 +147,20 @@ AI_RSS_FEEDS = [
         "region": "🌐 Global",
         "category": "Enterprise AI & Model Launches",
         "url": "https://venturebeat.com/category/ai/feed/"
+    },
+    {
+        "name": "The Decoder AI News",
+        "company": "The Decoder",
+        "region": "🌐 Global",
+        "category": "Frontier AI Releases & Breaking Models",
+        "url": "https://the-decoder.com/feed/"
+    },
+    {
+        "name": "AWS News & Bedrock Releases",
+        "company": "Amazon AWS",
+        "region": "🇺🇸 USA",
+        "category": "Bedrock Claude & Model Launches",
+        "url": "https://aws.amazon.com/blogs/aws/feed/"
     }
 ]
 

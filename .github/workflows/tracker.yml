@@ -1,0 +1,47 @@
+name: 24/7 AI Model Tracker Cron
+
+on:
+  schedule:
+    # Runs every 15 minutes automatically 24/7
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  track-and-broadcast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Model Tracker & Post to Telegram
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_CHAT_ID: ${{ secrets.CHANNEL_CHAT_ID }}
+          MAX_AGE_HOURS: 48
+        run: |
+          python run_cron.py
+
+      - name: Keep-Alive Streamlit App (Optional)
+        run: |
+          # Ping user's Streamlit Cloud app so it never goes to sleep!
+          curl -s "https://ai-model-tracker-bot-rsguf3.streamlit.app" > /dev/null || true
+
+      - name: Commit and Push state to avoid duplicate alerts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen_ids.txt || true
+          git commit -m "chore: update tracked model IDs [skip ci]" || exit 0
+          git push || true

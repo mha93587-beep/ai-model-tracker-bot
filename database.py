@@ -15,8 +15,10 @@ def get_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+SEEN_FILE = os.path.join(os.path.dirname(DB_PATH), "seen_ids.txt")
+
 def init_db():
-    """Initialize database tables if they do not exist."""
+    """Initialize database tables and sync with seen_ids.txt if available."""
     conn = get_connection()
     cursor = conn.cursor()
     
@@ -45,8 +47,20 @@ def init_db():
             sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     """)
-    
     conn.commit()
+
+    # Load seen_ids.txt into SQLite if available
+    if os.path.exists(SEEN_FILE):
+        try:
+            with open(SEEN_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    sid = line.strip()
+                    if sid:
+                        cursor.execute("INSERT OR IGNORE INTO indexed_items (item_id) VALUES (?)", (sid,))
+            conn.commit()
+        except Exception:
+            pass
+
     conn.close()
 
 def is_item_seen(item_id: str) -> bool:
@@ -59,7 +73,7 @@ def is_item_seen(item_id: str) -> bool:
     return exists
 
 def mark_item_seen(item_id: str, source_name: str, company: str, title: str, url: str, published_at: str):
-    """Save an item ID to prevent duplicate broadcasting."""
+    """Save an item ID to prevent duplicate broadcasting and append to seen_ids.txt."""
     conn = get_connection()
     cursor = conn.cursor()
     try:
@@ -70,6 +84,13 @@ def mark_item_seen(item_id: str, source_name: str, company: str, title: str, url
         conn.commit()
     finally:
         conn.close()
+
+    # Append to seen_ids.txt
+    try:
+        with open(SEEN_FILE, "a", encoding="utf-8") as f:
+            f.write(f"{item_id}\n")
+    except Exception:
+        pass
 
 def log_broadcast(item_id: str, title: str, company: str, status: str, message: str = ""):
     """Log an attempted or successful Telegram broadcast."""
