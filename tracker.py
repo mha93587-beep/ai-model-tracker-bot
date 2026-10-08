@@ -46,7 +46,10 @@ def send_telegram_message(text: str, parse_mode: str = "HTML", max_retries: int 
         "chat_id": CHANNEL_CHAT_ID,
         "text": text,
         "parse_mode": parse_mode,
-        "disable_web_page_preview": False
+        "disable_web_page_preview": True,
+        "link_preview_options": {
+            "is_disabled": True
+        }
     }
 
     for attempt in range(max_retries):
