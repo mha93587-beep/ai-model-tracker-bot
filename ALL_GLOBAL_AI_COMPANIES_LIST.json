@@ -1,0 +1,562 @@
+{
+  "USA": [
+    {
+      "company": "OpenAI",
+      "hq": "San Francisco, CA",
+      "domain": "Frontier LLMs, Generative AI, Reasoning, Multimodal (ChatGPT, Sora)"
+    },
+    {
+      "company": "Anthropic",
+      "hq": "San Francisco, CA",
+      "domain": "Frontier AI, Constitutional AI, Coding, Enterprise Safety (Claude)"
+    },
+    {
+      "company": "Google DeepMind",
+      "hq": "Mountain View, CA",
+      "domain": "Multimodal AI, Fundamental Research, Scientific AI, Robotics (Gemini, AlphaFold)"
+    },
+    {
+      "company": "Meta AI (FAIR)",
+      "hq": "Menlo Park, CA",
+      "domain": "Open-Weights Foundation Models, Vision, Speech (Llama, SAM)"
+    },
+    {
+      "company": "Microsoft AI",
+      "hq": "Redmond, WA",
+      "domain": "Enterprise Copilots, Small Language Models (Phi), Cloud AI"
+    },
+    {
+      "company": "xAI",
+      "hq": "San Francisco / Austin, TX",
+      "domain": "Frontier LLMs, Real-time Knowledge, Truth-seeking AI (Grok)"
+    },
+    {
+      "company": "Amazon AWS AI",
+      "hq": "Seattle, WA",
+      "domain": "Cloud Foundation Models, Enterprise AI Services (Nova, Titan, Bedrock)"
+    },
+    {
+      "company": "Apple AI & ML",
+      "hq": "Cupertino, CA",
+      "domain": "On-Device Intelligence, Edge Computing, Privacy-Preserving AI"
+    },
+    {
+      "company": "Cohere",
+      "hq": "Toronto / San Francisco",
+      "domain": "Enterprise RAG, Multilingual Embeddings, Reranking, Business LLMs"
+    },
+    {
+      "company": "Databricks / MosaicML",
+      "hq": "San Francisco, CA",
+      "domain": "Data Intelligence Platform, Open-source MoE Architectures (DBRX)"
+    },
+    {
+      "company": "Scale AI",
+      "hq": "San Francisco, CA",
+      "domain": "Data Engine, Data Labeling, Agent Evaluation Infrastructure"
+    },
+    {
+      "company": "Perplexity AI",
+      "hq": "San Francisco, CA",
+      "domain": "AI-Powered Conversational Search Engine & Research Agents"
+    },
+    {
+      "company": "Midjourney",
+      "hq": "San Francisco, CA",
+      "domain": "Photorealistic & Artistic Generative Visual AI"
+    },
+    {
+      "company": "Runway AI",
+      "hq": "New York City, NY",
+      "domain": "Generative Video Foundation Models & Cinematic Creative AI"
+    },
+    {
+      "company": "Pika Labs",
+      "hq": "Palo Alto, CA",
+      "domain": "Creative Generative Video Platform & Dynamic Effects"
+    },
+    {
+      "company": "Luma AI",
+      "hq": "San Francisco, CA",
+      "domain": "High-Motion Generative Video, 3D Radiance Fields, NeRFs"
+    },
+    {
+      "company": "ElevenLabs",
+      "hq": "New York City / London",
+      "domain": "Voice AI, Ultra-Realistic Voice Cloning, Speech Synthesis & Dubbing"
+    },
+    {
+      "company": "Suno AI",
+      "hq": "Cambridge, MA",
+      "domain": "Full-Track Studio AI Music Composition & Generation"
+    },
+    {
+      "company": "Udio",
+      "hq": "New York City, NY",
+      "domain": "High-Fidelity AI Music Generation & Multi-Track Synthesis"
+    },
+    {
+      "company": "Anysphere (Cursor AI)",
+      "hq": "San Francisco, CA",
+      "domain": "AI-Native Software Engineering & Code Autocompletion Editor"
+    },
+    {
+      "company": "Cognition AI",
+      "hq": "San Francisco, CA",
+      "domain": "Autonomous Software Engineering Agents (Devin)"
+    },
+    {
+      "company": "Glean",
+      "hq": "Palo Alto, CA",
+      "domain": "Enterprise Work Assistant & Semantic Workplace Search"
+    },
+    {
+      "company": "Harvey AI",
+      "hq": "San Francisco, CA",
+      "domain": "Specialized Legal AI for Law Firms & Professional Services"
+    },
+    {
+      "company": "Together AI",
+      "hq": "San Francisco, CA",
+      "domain": "Decentralized Cloud Inference & Open-Source Model Training"
+    },
+    {
+      "company": "Fireworks AI",
+      "hq": "San Mateo, CA",
+      "domain": "Ultra-Fast Production Inference Engine for Generative AI"
+    },
+    {
+      "company": "Groq",
+      "hq": "Mountain View, CA",
+      "domain": "LPU (Language Processing Unit) Real-Time AI Hardware & Inference"
+    },
+    {
+      "company": "Cerebras Systems",
+      "hq": "Sunnyvale, CA",
+      "domain": "Wafer-Scale AI Accelerators & Ultra-Fast LLM Compute"
+    },
+    {
+      "company": "Character.ai",
+      "hq": "Menlo Park, CA",
+      "domain": "Conversational AI Companions & Personalized Persona Bots"
+    },
+    {
+      "company": "Inflection AI",
+      "hq": "Palo Alto, CA",
+      "domain": "Empathetic Conversational Personal AI (Pi) & Enterprise Solutions"
+    },
+    {
+      "company": "Ideogram AI",
+      "hq": "Toronto / San Francisco",
+      "domain": "Generative Graphic Design & Text-Accurate Image Synthesis"
+    },
+    {
+      "company": "Recraft AI",
+      "hq": "San Francisco, CA",
+      "domain": "Native Vector (SVG) & Brand Design Generative AI"
+    },
+    {
+      "company": "Voyage AI",
+      "hq": "Palo Alto, CA",
+      "domain": "SOTA Dense Embeddings & Domain-Specific Retrieval Systems"
+    },
+    {
+      "company": "World Labs",
+      "hq": "San Francisco, CA",
+      "domain": "Spatial Intelligence & Large World Models (Fei-Fei Li)"
+    },
+    {
+      "company": "Figure AI",
+      "hq": "Sunnyvale, CA",
+      "domain": "Autonomous General-Purpose Humanoid Robotics AI"
+    },
+    {
+      "company": "Sierra AI",
+      "hq": "San Francisco, CA",
+      "domain": "Enterprise Conversational Agents (Bret Taylor)"
+    },
+    {
+      "company": "Decagon",
+      "hq": "San Francisco, CA",
+      "domain": "Enterprise Customer Support Autonomous AI Agents"
+    },
+    {
+      "company": "Hebbia",
+      "hq": "New York City, NY",
+      "domain": "AI Knowledge Workers & Complex Financial/Legal Document Agents"
+    },
+    {
+      "company": "EvolutionaryScale",
+      "hq": "New York City, NY",
+      "domain": "Biology Foundation Models & Synthetic Protein Evolution (ESM-3)"
+    },
+    {
+      "company": "Chai Discovery",
+      "hq": "San Francisco, CA",
+      "domain": "Biomolecular Structure Prediction & Drug Discovery AI"
+    },
+    {
+      "company": "Hugging Face",
+      "hq": "New York City, NY",
+      "domain": "Global Open-Source Machine Learning Hub & Model Repository"
+    }
+  ],
+  "China": [
+    {
+      "company": "DeepSeek (High-Flyer)",
+      "hq": "Hangzhou, Zhejiang",
+      "domain": "Frontier Cost-Efficient LLMs, Pure RL Reasoning, MLA Architectures"
+    },
+    {
+      "company": "Zhipu AI (Z.ai)",
+      "hq": "Beijing",
+      "domain": "Six AI Tigers; Tsinghua Spin-off; Bilingual Foundation Models, Enterprise GLM"
+    },
+    {
+      "company": "Moonshot AI (Kimi)",
+      "hq": "Beijing",
+      "domain": "Six AI Tigers; Long-Context LLMs (2M tokens) & Agentic Reasoning"
+    },
+    {
+      "company": "MiniMax (Hailuo AI)",
+      "hq": "Shanghai",
+      "domain": "Six AI Tigers; Cinematic Video (Video-01), Voice & Consumer AI (Talkie)"
+    },
+    {
+      "company": "Baichuan Intelligence",
+      "hq": "Beijing",
+      "domain": "Six AI Tigers; Healthcare & Medical Domain LLMs, Bilingual Knowledge"
+    },
+    {
+      "company": "StepFun (Jieyue Xingchen)",
+      "hq": "Shanghai",
+      "domain": "Six AI Tigers; Trillion-Parameter Multimodal & Video Models"
+    },
+    {
+      "company": "01.AI",
+      "hq": "Beijing",
+      "domain": "Six AI Tigers (Kai-Fu Lee); High-Performance Bilingual LLMs & Enterprise AI"
+    },
+    {
+      "company": "Alibaba Cloud / DAMO",
+      "hq": "Hangzhou, Zhejiang",
+      "domain": "Open-Source Foundation Suite (Qwen), Multimodal, Speech, Video"
+    },
+    {
+      "company": "Tencent AI Lab / Hunyuan",
+      "hq": "Shenzhen, Guangdong",
+      "domain": "Multimodal Foundation Models, Open-Source Video (Hunyuan-Video), 3D"
+    },
+    {
+      "company": "ByteDance (Doubao)",
+      "hq": "Beijing",
+      "domain": "High-Volume Consumer LLMs, Video AI (Jimeng/Dreamina, Seaweed)"
+    },
+    {
+      "company": "Baidu (Wenxin / ERNIE)",
+      "hq": "Beijing",
+      "domain": "Enterprise LLMs, Search Integration, Autonomous Driving (Apollo)"
+    },
+    {
+      "company": "Kuaishou (Kling AI)",
+      "hq": "Beijing",
+      "domain": "Cinematic Video Generation (Kling 1.5) & Visual Diffusion"
+    },
+    {
+      "company": "Shengshu Technology (Vidu)",
+      "hq": "Beijing",
+      "domain": "Universal Vision Transformer (U-ViT) High-Speed Video Generation"
+    },
+    {
+      "company": "SenseTime",
+      "hq": "Hong Kong / Shanghai",
+      "domain": "SenseNova Foundation Model Suite & Computer Vision Solutions"
+    },
+    {
+      "company": "iFlytek",
+      "hq": "Hefei, Anhui",
+      "domain": "Voice Recognition, Cognitive Models (SparkDesk) & Language Translation"
+    },
+    {
+      "company": "BAAI (Beijing Academy of AI)",
+      "hq": "Beijing",
+      "domain": "Non-profit Elite Research Hub; Standard-Setting Embeddings (BGE), Multimodal"
+    },
+    {
+      "company": "Shanghai AI Laboratory",
+      "hq": "Shanghai",
+      "domain": "Open Research Lab; Open-Source Foundation Models (InternLM, InternVL)"
+    },
+    {
+      "company": "Unitree Robotics",
+      "hq": "Hangzhou, Zhejiang",
+      "domain": "AI-Powered Quadruped & Humanoid Robotics"
+    },
+    {
+      "company": "AgiBot (Zhiyuan Robotics)",
+      "hq": "Shanghai",
+      "domain": "Embodied AI & General-Purpose Humanoid Robotics"
+    },
+    {
+      "company": "Cambricon Technologies",
+      "hq": "Beijing",
+      "domain": "Dedicated AI Chipmaker & Neural Processing Accelerators"
+    }
+  ],
+  "India": [
+    {
+      "company": "Sarvam AI",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Sovereign AI Unicorn; Indic Language LLMs (Sarvam-1), Voice ASR/TTS (Saaras, Bulbul)"
+    },
+    {
+      "company": "Krutrim (Ola)",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "India's First AI Unicorn; Sovereign Indic Foundation LLMs, AI Cloud & Silicon"
+    },
+    {
+      "company": "Neysa",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "AI Compute & GPU Acceleration Infrastructure ($1.2B Blackstone Backed)"
+    },
+    {
+      "company": "Bhashini (MeitY)",
+      "hq": "New Delhi",
+      "domain": "National Sovereign AI Mission; 22 Indian Language Translation, Speech & OCR"
+    },
+    {
+      "company": "AI4Bharat (IIT Madras)",
+      "hq": "Chennai, Tamil Nadu",
+      "domain": "Open-Source Indic AI Research Consortium; IndicTrans2, IndicBERT, Benchmarks"
+    },
+    {
+      "company": "CoRover.ai",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Conversational Multimodal AI Platform (BharatGPT) powering IRCTC/Govt"
+    },
+    {
+      "company": "Fractal Analytics",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "Enterprise AI, Decision Sciences, Cognitive Analytics & AI Platforms"
+    },
+    {
+      "company": "Uniphore",
+      "hq": "Chennai / Palo Alto",
+      "domain": "Enterprise Conversational AI, Voice Analytics & Customer Experience"
+    },
+    {
+      "company": "Innovaccer",
+      "hq": "Noida / San Francisco",
+      "domain": "Healthcare AI & Clinical Intelligence Unification Platform ($3.45B)"
+    },
+    {
+      "company": "Qure.ai",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "Deep Learning Medical Imaging & Clinical Diagnostics AI (Chest X-ray, CT)"
+    },
+    {
+      "company": "Gnani.ai",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Voice-First Conversational AI, Omnichannel Speech & Voice Biometrics (Armour365)"
+    },
+    {
+      "company": "Two AI (SUTRA)",
+      "hq": "Bengaluru / Silicon Valley",
+      "domain": "Cost-Efficient Multilingual Foundation Models (Pranav Mistry)"
+    },
+    {
+      "company": "Hanooman AI (SML)",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "BharatGen Consortium Indic LLM Suite for Healthcare, Governance, Education"
+    },
+    {
+      "company": "Pixis",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Codeless AI Infrastructure for Performance Marketing & Predictive Creative"
+    },
+    {
+      "company": "KissanAI",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Agricultural AI & Vernacular Farming Voice Assistant (Dhenu)"
+    },
+    {
+      "company": "Karya",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Ethical High-Quality Vernacular AI Data Annotation & Rural Data Sourcing"
+    },
+    {
+      "company": "Soket AI Labs",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Indigenous Foundation Models (Pratham, Samarth) for Indian Enterprises"
+    },
+    {
+      "company": "SigTuple",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "AI-Assisted Digital Pathology & Automated Microscopic Diagnostics"
+    },
+    {
+      "company": "Ressl AI",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Autonomous AI Agents for High-Scale Enterprise Workflows"
+    },
+    {
+      "company": "Yellow.ai",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Omnichannel Dynamic AI Agents & Customer Support Automation"
+    },
+    {
+      "company": "Gupshup",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "Conversational AI Messaging & Enterprise Bot Infrastructure"
+    },
+    {
+      "company": "Agrani Labs",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Domestic AI Chip Design & Semiconductor Architectures"
+    },
+    {
+      "company": "Yotta Data Services",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "Sovereign GPU Supercomputing Cloud & High-Performance AI Infrastructure"
+    },
+    {
+      "company": "Reliance Jio (Jio Brain)",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "Telecom 5G-Integrated AI Platform & Sovereign Supercomputing Consortium"
+    },
+    {
+      "company": "Tata Consultancy Services (TCS AI Wisdm)",
+      "hq": "Mumbai, Maharashtra",
+      "domain": "Enterprise Sovereign AI Architectures & Industry Domain Models"
+    },
+    {
+      "company": "Infosys (Infosys Topaz)",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "Enterprise Generative AI Suite, Cognitive Solutions & Foundation Models"
+    },
+    {
+      "company": "Wipro (ai360)",
+      "hq": "Bengaluru, Karnataka",
+      "domain": "End-to-End Enterprise AI Ecosystem & AI-Powered Business Transformation"
+    },
+    {
+      "company": "Tech Mahindra (Project Indus)",
+      "hq": "Pune, Maharashtra",
+      "domain": "Vernacular LLM Initiative Focused on Indian Dialects & Native Context"
+    }
+  ],
+  "Europe": [
+    {
+      "company": "Mistral AI",
+      "hq": "Paris, France",
+      "domain": "Europe's Leading Frontier Open-Weights Lab (Mistral 3, Mixtral, Pixtral)"
+    },
+    {
+      "company": "Black Forest Labs",
+      "hq": "Freiburg, Germany",
+      "domain": "World-Leading Visual Generative Flow Models (FLUX.1 Family)"
+    },
+    {
+      "company": "Helsing",
+      "hq": "Munich, Germany / London, UK",
+      "domain": "Sovereign Defense AI & Real-Time Sensor Processing Platform"
+    },
+    {
+      "company": "Aleph Alpha",
+      "hq": "Heidelberg, Germany",
+      "domain": "Sovereign European AI, Transparent Enterprise LLMs & Kolibri Model"
+    },
+    {
+      "company": "Poolside",
+      "hq": "Paris, France",
+      "domain": "Frontier AI Foundation Models for Autonomous Software Development"
+    },
+    {
+      "company": "Kyutai",
+      "hq": "Paris, France",
+      "domain": "Non-Profit Open-Science AI Lab; Real-Time Full-Duplex Voice AI (Moshi)"
+    },
+    {
+      "company": "DeepL",
+      "hq": "Cologne, Germany",
+      "domain": "Neural Machine Translation & Nuanced Enterprise Language Processing"
+    },
+    {
+      "company": "Synthesia",
+      "hq": "London, United Kingdom",
+      "domain": "AI Video Generation Platform & Expressive Digital Avatars"
+    },
+    {
+      "company": "Stability AI",
+      "hq": "London, UK / San Francisco",
+      "domain": "Open-Source Generative Media Pioneer (Stable Diffusion, Stable Audio)"
+    },
+    {
+      "company": "Wayve",
+      "hq": "London, United Kingdom",
+      "domain": "Embodied AI & End-to-End Deep Learning Autonomous Driving"
+    },
+    {
+      "company": "Lovable",
+      "hq": "Stockholm, Sweden",
+      "domain": "AI Software Engineering & Full-Stack Web App Generation"
+    },
+    {
+      "company": "Photoroom",
+      "hq": "Paris, France",
+      "domain": "AI Commercial Photography, E-Commerce Product Image Processing"
+    },
+    {
+      "company": "Jina AI",
+      "hq": "Berlin, Germany",
+      "domain": "Multimodal Vector Search, 8k Text Embeddings & Cross-Encoder Rerankers"
+    }
+  ],
+  "Other_Global": [
+    {
+      "company": "TII - Technology Innovation Institute",
+      "hq": "Abu Dhabi, UAE",
+      "domain": "Sovereign Frontier Open-Source LLMs (Falcon Family)"
+    },
+    {
+      "company": "SDAIA",
+      "hq": "Riyadh, Saudi Arabia",
+      "domain": "Saudi Data and AI Authority; Sovereign Arabic LLMs (ALLaM)"
+    },
+    {
+      "company": "Sakana AI",
+      "hq": "Tokyo, Japan",
+      "domain": "Nature-Inspired Evolutionary AI, Model Merging & Autonomous Science"
+    },
+    {
+      "company": "Preferred Networks",
+      "hq": "Tokyo, Japan",
+      "domain": "Deep Learning Architectures, Robotics & Supercomputing AI"
+    },
+    {
+      "company": "NTT (tsuzumi)",
+      "hq": "Tokyo, Japan",
+      "domain": "Ultra-Lightweight Energy-Efficient Japanese Enterprise LLMs"
+    },
+    {
+      "company": "Naver",
+      "hq": "Seongnam, South Korea",
+      "domain": "Leading Sovereign Asian Search & Foundation AI (HyperCLOVA X)"
+    },
+    {
+      "company": "LG AI Research",
+      "hq": "Seoul, South Korea",
+      "domain": "Bilingual Foundation Models (EXAONE), Materials & Chemistry AI"
+    },
+    {
+      "company": "Upstage AI",
+      "hq": "Seoul, South Korea",
+      "domain": "Document AI, Solar LLM & Enterprise Work Assistants"
+    },
+    {
+      "company": "AI Singapore",
+      "hq": "Singapore",
+      "domain": "Southeast Asian Sovereign LLM Consortium (SEA-LION)"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Secrets and Credentials (NEVER COMMIT)
+.env
+.env.*
+.streamlit/secrets.toml
+
+# SQLite Database and Runtime Data
+*.db
+*.sqlite3
+model_tracker.db
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
