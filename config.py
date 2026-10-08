@@ -34,6 +34,8 @@ BOT_TOKEN = get_secret("BOT_TOKEN", "")
 CHANNEL_CHAT_ID = get_secret("CHANNEL_CHAT_ID", "-1004454876267")
 CHANNEL_USERNAME = get_secret("CHANNEL_USERNAME", "https://t.me/modeltracker")
 CHECK_INTERVAL_SECONDS = int(get_secret("CHECK_INTERVAL_SECONDS", "300"))
+# Maximum lookback threshold in hours (Models older than this will NOT be posted)
+MAX_AGE_HOURS = int(get_secret("MAX_AGE_HOURS", "48"))
 
 # Database path (Stored in local directory or /tmp if running read-only)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -56,18 +58,18 @@ AI_RSS_FEEDS = [
         "url": "https://blog.google/technology/ai/rss/"
     },
     {
+        "name": "Google Developers AI",
+        "company": "Google Developers",
+        "region": "🇺🇸 USA",
+        "category": "Gemini API & Developer Releases",
+        "url": "https://blog.google/technology/developers/rss/"
+    },
+    {
         "name": "OpenAI News & Announcements",
         "company": "OpenAI",
         "region": "🇺🇸 USA",
         "category": "Frontier Models & ChatGPT",
         "url": "https://openai.com/news/rss.xml"
-    },
-    {
-        "name": "Anthropic News",
-        "company": "Anthropic",
-        "region": "🇺🇸 USA",
-        "category": "Claude & Frontier AI",
-        "url": "https://www.anthropic.com/news/rss.xml"
     },
     {
         "name": "Meta AI Engineering & Research",

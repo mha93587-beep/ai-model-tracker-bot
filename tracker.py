@@ -1,25 +1,46 @@
 # -*- coding: utf-8 -*-
 """
 AI Model Tracker Engine.
-Monitors RSS feeds, GitHub Releases, and Hugging Face model hub APIs,
-formats updates, and broadcasts new releases to Telegram channel.
+Monitors RSS feeds, GitHub Releases, Anthropic news scraper, and Hugging Face Hub APIs.
+Applies a strict 48-hour freshness filter so old models (6 months / 1 year) are NEVER posted.
 """
 
 import time
 import requests
 import feedparser
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+from dateutil import parser as date_parser
 from bs4 import BeautifulSoup
 import html
 
 from config import (
     BOT_TOKEN,
     CHANNEL_CHAT_ID,
+    MAX_AGE_HOURS,
     AI_RSS_FEEDS,
     GITHUB_RELEASE_FEEDS,
     HF_TRACKED_ORGS
 )
 from database import is_item_seen, mark_item_seen, log_broadcast
+
+def is_recent_date(date_str: str, max_hours: int = MAX_AGE_HOURS) -> bool:
+    """
+    Check if a publication date / ISO timestamp is within the last `max_hours`.
+    Filters out models and articles that are months or years old.
+    """
+    if not date_str:
+        return False
+    try:
+        dt = date_parser.parse(date_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        now = datetime.now(timezone.utc)
+        diff = now - dt
+        # Must be within past max_hours and not far in the future
+        return timedelta(seconds=0) <= diff <= timedelta(hours=max_hours)
+    except Exception:
+        # If date parsing fails, be conservative
+        return False
 
 def clean_html(raw_html: str, max_chars: int = 300) -> str:
     """Strip HTML tags and truncate text for clean Telegram preview."""
@@ -35,8 +56,8 @@ def clean_html(raw_html: str, max_chars: int = 300) -> str:
 def send_telegram_message(text: str, parse_mode: str = "HTML", max_retries: int = 3) -> tuple[bool, str]:
     """
     Send formatted notification to the target Telegram Channel.
-    Automatically handles Telegram rate limits (HTTP 429) with exponential backoff.
-    Returns (success: bool, status_message: str).
+    - Disables web page link previews completely.
+    - Automatically handles Telegram rate limits (HTTP 429) with exponential backoff.
     """
     if not BOT_TOKEN or not CHANNEL_CHAT_ID:
         return False, "Bot Token or Channel ID is missing in configuration."
@@ -63,7 +84,6 @@ def send_telegram_message(text: str, parse_mode: str = "HTML", max_retries: int 
             # Handle HTTP 429: Too Many Requests
             if response.status_code == 429:
                 retry_after = res_data.get("parameters", {}).get("retry_after", 5)
-                # Sleep the requested duration plus 1 second buffer
                 time.sleep(retry_after + 1)
                 continue
             
@@ -85,7 +105,7 @@ def format_rss_post(entry, source: dict) -> str:
     link = entry.get("link", "")
     summary = clean_html(entry.get("summary", entry.get("description", "")))
     
-    published = entry.get("published", entry.get("updated", datetime.utcnow().strftime("%Y-%m-%d")))
+    published = entry.get("published", entry.get("updated", datetime.now(timezone.utc).strftime("%Y-%m-%d")))
     company = source.get("company", "AI Lab")
     region = source.get("region", "Global")
     category = source.get("category", "AI Updates")
@@ -112,7 +132,7 @@ def format_rss_post(entry, source: dict) -> str:
 def format_hf_post(model: dict, org_info: dict) -> str:
     """Format a Hugging Face new model launch into a Telegram HTML post."""
     model_id = model.get("id", "")
-    created_at = model.get("createdAt", datetime.utcnow().strftime("%Y-%m-%d"))
+    created_at = model.get("createdAt", datetime.now(timezone.utc).strftime("%Y-%m-%d"))
     pipeline = model.get("pipeline_tag", "Foundation / Multimodal")
     company = org_info.get("company", "AI Lab")
     country = org_info.get("country", "Global")
@@ -132,18 +152,96 @@ def format_hf_post(model: dict, org_info: dict) -> str:
     )
     return msg
 
+def fetch_anthropic_news() -> list:
+    """
+    Directly scrapes Anthropic's news announcements from https://www.anthropic.com/news
+    because Anthropic does not provide an official public RSS feed.
+    """
+    announcements = []
+    url = "https://www.anthropic.com/news"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    try:
+        r = requests.get(url, headers=headers, timeout=12)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, "html.parser")
+            seen_links = set()
+            for a in soup.find_all("a", href=True):
+                href = a["href"]
+                if href.startswith("/news/") and len(href) > 6:
+                    full_link = f"https://www.anthropic.com{href}"
+                    if full_link in seen_links:
+                        continue
+                    seen_links.add(full_link)
+                    
+                    text_parts = [p.strip() for p in a.get_text(separator="\n").split("\n") if p.strip()]
+                    title = ""
+                    summary = ""
+                    date_text = ""
+                    for p in text_parts:
+                        if any(m in p for m in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]):
+                            date_text = p
+                        elif len(p) > len(title):
+                            summary = title
+                            title = p
+                    
+                    if title:
+                        announcements.append({
+                            "title": title,
+                            "link": full_link,
+                            "summary": summary,
+                            "published": date_text or datetime.now(timezone.utc).strftime("%b %d, %Y"),
+                            "company": "Anthropic",
+                            "region": "🇺🇸 USA",
+                            "category": "Claude & Frontier AI"
+                        })
+    except Exception as e:
+        print(f"Error scraping Anthropic: {e}")
+    return announcements
+
 def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
     """
-    Execute one complete tracking pass across:
-    1. Curated RSS/Atom Feeds
-    2. GitHub Release Atom Feeds
-    3. Hugging Face Model APIs
+    Execute one complete tracking pass with strict 48-hour lookback:
+    1. Anthropic Live News Scraper
+    2. Curated RSS/Atom Feeds (Google DeepMind, OpenAI, Meta, Google Developers, etc.)
+    3. GitHub Release Atom Feeds
+    4. Hugging Face Model APIs
     """
     new_found = 0
     new_broadcasted = 0
     errors = []
 
-    # --- 1. Process RSS / Atom Feeds ---
+    # --- 1. Anthropic Live News Scraper ---
+    anthropic_items = fetch_anthropic_news()
+    for item in anthropic_items:
+        item_id = item["link"]
+        if is_item_seen(item_id):
+            continue
+            
+        pub_date = item.get("published", "")
+        # Apply freshness check (last 48 hours)
+        if not is_recent_date(pub_date, MAX_AGE_HOURS):
+            # Mark seen so we don't re-parse old news
+            mark_item_seen(item_id, "Anthropic News", "Anthropic", item["title"], item["link"], pub_date)
+            continue
+            
+        new_found += 1
+        if broadcast_to_telegram:
+            formatted_msg = format_rss_post(item, item)
+            success, resp_msg = send_telegram_message(formatted_msg)
+            if success:
+                new_broadcasted += 1
+                mark_item_seen(item_id, "Anthropic News", "Anthropic", item["title"], item["link"], pub_date)
+                log_broadcast(item_id, item["title"], "Anthropic", "SUCCESS", resp_msg)
+                time.sleep(2.5)
+            else:
+                errors.append(f"Anthropic: {resp_msg}")
+                log_broadcast(item_id, item["title"], "Anthropic", "FAILED", resp_msg)
+        else:
+            mark_item_seen(item_id, "Anthropic News", "Anthropic", item["title"], item["link"], pub_date)
+
+    # --- 2. Process RSS / Atom Feeds ---
     all_feeds = AI_RSS_FEEDS + GITHUB_RELEASE_FEEDS
     for feed_info in all_feeds:
         try:
@@ -151,21 +249,25 @@ def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
             if not feed.entries:
                 continue
                 
-            # Process the latest 3 entries from each feed
-            for entry in feed.entries[:3]:
+            for entry in feed.entries[:5]:
                 item_id = entry.get("id") or entry.get("link") or entry.get("title")
                 if not item_id:
                     continue
                 
-                # Check duplicate
                 if is_item_seen(item_id):
                     continue
                     
-                new_found += 1
+                pub_date = entry.get("published", entry.get("updated", ""))
                 title = entry.get("title", "AI Update")
                 link = entry.get("link", "")
-                pub_date = entry.get("published", entry.get("updated", ""))
-
+                
+                # Check strict freshness: only last 48 hours
+                if not is_recent_date(pub_date, MAX_AGE_HOURS):
+                    # Silently mark seen so old articles are skipped permanently
+                    mark_item_seen(item_id, feed_info["name"], feed_info["company"], title, link, pub_date)
+                    continue
+                    
+                new_found += 1
                 if broadcast_to_telegram:
                     formatted_msg = format_rss_post(entry, feed_info)
                     success, resp_msg = send_telegram_message(formatted_msg)
@@ -174,21 +276,20 @@ def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
                         new_broadcasted += 1
                         mark_item_seen(item_id, feed_info["name"], feed_info["company"], title, link, pub_date)
                         log_broadcast(item_id, title, feed_info["company"], "SUCCESS", resp_msg)
-                        time.sleep(2.5)  # Telegram API gentle spacing
+                        time.sleep(2.5)
                     else:
                         errors.append(f"{feed_info['name']}: {resp_msg}")
                         log_broadcast(item_id, title, feed_info["company"], "FAILED", resp_msg)
                 else:
-                    # Mark seen without broadcasting (e.g. cold start)
                     mark_item_seen(item_id, feed_info["name"], feed_info["company"], title, link, pub_date)
                     
         except Exception as e:
             errors.append(f"Feed error ({feed_info.get('name')}): {str(e)}")
 
-    # --- 2. Process Hugging Face Hub Model APIs ---
+    # --- 3. Process Hugging Face Hub Model APIs ---
     for org_info in HF_TRACKED_ORGS:
         org = org_info["org"]
-        api_url = f"https://huggingface.co/api/models?author={org}&sort=createdAt&direction=-1&limit=2"
+        api_url = f"https://huggingface.co/api/models?author={org}&sort=createdAt&direction=-1&limit=5"
         try:
             r = requests.get(api_url, timeout=10)
             if r.status_code == 200:
@@ -202,9 +303,15 @@ def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
                     if is_item_seen(item_key):
                         continue
                         
-                    new_found += 1
                     created_at = model.get("createdAt", "")
                     
+                    # Check strict freshness: only last 48 hours
+                    if not is_recent_date(created_at, MAX_AGE_HOURS):
+                        # Silently mark seen so old models from months ago are never posted
+                        mark_item_seen(item_key, "Hugging Face Hub", org_info["company"], model_id, f"https://huggingface.co/{model_id}", created_at)
+                        continue
+                        
+                    new_found += 1
                     if broadcast_to_telegram:
                         formatted_msg = format_hf_post(model, org_info)
                         success, resp_msg = send_telegram_message(formatted_msg)
