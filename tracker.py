@@ -32,9 +32,10 @@ def clean_html(raw_html: str, max_chars: int = 300) -> str:
         return text[:max_chars].rsplit(" ", 1)[0] + "..."
     return text
 
-def send_telegram_message(text: str, parse_mode: str = "HTML") -> tuple[bool, str]:
+def send_telegram_message(text: str, parse_mode: str = "HTML", max_retries: int = 3) -> tuple[bool, str]:
     """
     Send formatted notification to the target Telegram Channel.
+    Automatically handles Telegram rate limits (HTTP 429) with exponential backoff.
     Returns (success: bool, status_message: str).
     """
     if not BOT_TOKEN or not CHANNEL_CHAT_ID:
@@ -48,19 +49,32 @@ def send_telegram_message(text: str, parse_mode: str = "HTML") -> tuple[bool, st
         "disable_web_page_preview": False
     }
 
-    try:
-        response = requests.post(url, json=payload, timeout=15)
-        res_data = response.json()
-        
-        if response.status_code == 200 and res_data.get("ok"):
-            return True, "Broadcast posted successfully."
-        else:
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(url, json=payload, timeout=20)
+            res_data = response.json()
+            
+            if response.status_code == 200 and res_data.get("ok"):
+                return True, "Broadcast posted successfully."
+            
+            # Handle HTTP 429: Too Many Requests
+            if response.status_code == 429:
+                retry_after = res_data.get("parameters", {}).get("retry_after", 5)
+                # Sleep the requested duration plus 1 second buffer
+                time.sleep(retry_after + 1)
+                continue
+            
             err_desc = res_data.get("description", "Unknown Telegram API error")
             return False, f"Telegram API Error ({response.status_code}): {err_desc}"
-    except requests.exceptions.Timeout:
-        return False, "Telegram API Timeout: Request timed out."
-    except Exception as e:
-        return False, f"Network / Request Exception: {str(e)}"
+        except requests.exceptions.Timeout:
+            if attempt < max_retries - 1:
+                time.sleep(2)
+                continue
+            return False, "Telegram API Timeout: Request timed out."
+        except Exception as e:
+            return False, f"Network / Request Exception: {str(e)}"
+
+    return False, "Telegram API Error (429): Rate limited after retries."
 
 def format_rss_post(entry, source: dict) -> str:
     """Format an RSS / Atom feed update into an attractive Telegram HTML post."""
@@ -157,7 +171,7 @@ def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
                         new_broadcasted += 1
                         mark_item_seen(item_id, feed_info["name"], feed_info["company"], title, link, pub_date)
                         log_broadcast(item_id, title, feed_info["company"], "SUCCESS", resp_msg)
-                        time.sleep(1.5)  # Telegram API gentle delay
+                        time.sleep(2.5)  # Telegram API gentle spacing
                     else:
                         errors.append(f"{feed_info['name']}: {resp_msg}")
                         log_broadcast(item_id, title, feed_info["company"], "FAILED", resp_msg)
@@ -196,7 +210,7 @@ def run_tracking_cycle(broadcast_to_telegram: bool = True) -> dict:
                             new_broadcasted += 1
                             mark_item_seen(item_key, "Hugging Face Hub", org_info["company"], model_id, f"https://huggingface.co/{model_id}", created_at)
                             log_broadcast(item_key, model_id, org_info["company"], "SUCCESS", resp_msg)
-                            time.sleep(1.5)
+                            time.sleep(2.5)
                         else:
                             errors.append(f"HF {org}: {resp_msg}")
                             log_broadcast(item_key, model_id, org_info["company"], "FAILED", resp_msg)
