@@ -193,3 +193,8 @@ https://the-decoder.com/?p=41281
 https://the-decoder.com/?p=41255
 tag:github.com,2008:Repository/658928958/v0.40.2
 tag:github.com,2008:Repository/658928958/v0.40.2-rc0
+https://openai.com/index/legalon-halves-codex-costs
+https://huggingface.co/blog/building-with-ml-intern
+https://blogs.nvidia.com/?p=98677
+https://techcrunch.com/?p=3175918
+https://techcrunch.com/?p=3175894
