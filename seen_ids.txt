@@ -221,3 +221,6 @@ https://the-decoder.com/?p=40864
 hf_model_Qwen/Qwen-Image-2.1-Turbo
 hf_model_mistralai/LIDstral-Arabic
 hf_model_mistralai/Voxtral-Mini-4B-Realtime-Arabic
+https://openai.com/index/asana-browser-agent
+https://techcrunch.com/?p=3176290
+https://techcrunch.com/?p=3176212
