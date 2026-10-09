@@ -207,3 +207,17 @@ hf_model_nvidia/agile_one_s_place_ssd_n17_24050
 hf_model_nvidia/agile_one_s_walk_n2_1680
 hf_model_nvidia/agile_one_s_pick_ssd_n17_58000
 hf_model_nvidia/agile_one_s_pick_ssd_n17_40000
+https://huggingface.co/blog/allenai/impactful-scheduling
+47f6ae2bd79e8fc92d958051f1fc9a5345f3e76e
+b70b3126633995a55ec3140e570c01681b054d89
+https://techcrunch.com/?post_type=tc_video&p=3176138
+https://techcrunch.com/?post_type=tc_podcast&p=3176135
+https://techcrunch.com/?p=3174693
+https://techcrunch.com/?p=3175674
+https://techcrunch.com/?p=3176079
+https://the-decoder.com/?p=41324
+https://the-decoder.com/?p=41318
+https://the-decoder.com/?p=40864
+hf_model_Qwen/Qwen-Image-2.1-Turbo
+hf_model_mistralai/LIDstral-Arabic
+hf_model_mistralai/Voxtral-Mini-4B-Realtime-Arabic
