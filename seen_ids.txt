@@ -199,3 +199,11 @@ https://blogs.nvidia.com/?p=98677
 https://techcrunch.com/?p=3175918
 https://techcrunch.com/?p=3175894
 tag:github.com,2008:Repository/599547518/proto-v0.5.0
+https://openai.com/index/sophos
+https://the-decoder.com/?p=41309
+https://the-decoder.com/?p=41300
+https://the-decoder.com/?p=41275
+hf_model_nvidia/agile_one_s_place_ssd_n17_24050
+hf_model_nvidia/agile_one_s_walk_n2_1680
+hf_model_nvidia/agile_one_s_pick_ssd_n17_58000
+hf_model_nvidia/agile_one_s_pick_ssd_n17_40000
