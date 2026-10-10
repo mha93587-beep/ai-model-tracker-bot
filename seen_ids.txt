@@ -228,3 +228,8 @@ https://techcrunch.com/?p=3176323
 hf_model_nvidia/agile_one_s_pick_ssd_n2_1120
 hf_model_nvidia/agile_one_s_place_ssd_n2_1260
 hf_model_nvidia/agile_one_s_pickplace_ssd_n2_18200
+https://techcrunch.com/?p=3173132
+https://the-decoder.com/?p=41360
+https://the-decoder.com/?p=41342
+https://the-decoder.com/?p=41333
+https://the-decoder.com/?p=41328
