@@ -224,3 +224,7 @@ hf_model_mistralai/Voxtral-Mini-4B-Realtime-Arabic
 https://openai.com/index/asana-browser-agent
 https://techcrunch.com/?p=3176290
 https://techcrunch.com/?p=3176212
+https://techcrunch.com/?p=3176323
+hf_model_nvidia/agile_one_s_pick_ssd_n2_1120
+hf_model_nvidia/agile_one_s_place_ssd_n2_1260
+hf_model_nvidia/agile_one_s_pickplace_ssd_n2_18200
