@@ -242,3 +242,9 @@ tag:github.com,2008:Repository/658928958/v0.40.3-rc0
 tag:github.com,2008:Repository/658928958/v0.40.3
 hf_model_microsoft/AesCode-32B
 hf_model_microsoft/AesCode-8B
+https://techcrunch.com/?p=3176054
+https://the-decoder.com/?p=41402
+https://the-decoder.com/?p=41397
+https://the-decoder.com/?p=41390
+https://the-decoder.com/?p=41386
+https://the-decoder.com/?p=41313
