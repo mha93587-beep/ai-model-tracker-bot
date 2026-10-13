@@ -275,3 +275,12 @@ hf_model_nvidia/Qwen-Image-NVFP4
 https://blogs.nvidia.com/?p=98737
 tag:github.com,2008:Repository/658928958/v0.40.4-rc1
 tag:github.com,2008:Repository/599547518/v0.32.0rc0
+https://blogs.nvidia.com/?p=98768
+https://techcrunch.com/?p=3176868
+https://techcrunch.com/?p=3176969
+https://techcrunch.com/?p=3173520
+https://techcrunch.com/?p=3175284
+https://techcrunch.com/?p=3176907
+https://the-decoder.com/?p=41486
+https://the-decoder.com/?p=41475
+https://the-decoder.com/?p=41470
