@@ -272,3 +272,6 @@ https://techcrunch.com/?p=3175181
 https://the-decoder.com/?p=41463
 4158873d220345e053e781fb51ca252fff001d13
 hf_model_nvidia/Qwen-Image-NVFP4
+https://blogs.nvidia.com/?p=98737
+tag:github.com,2008:Repository/658928958/v0.40.4-rc1
+tag:github.com,2008:Repository/599547518/v0.32.0rc0
