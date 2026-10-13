@@ -268,3 +268,7 @@ https://the-decoder.com/?p=41439
 https://the-decoder.com/?p=41425
 https://the-decoder.com/?p=41429
 tag:github.com,2008:Repository/658928958/v0.40.4-rc0
+https://techcrunch.com/?p=3175181
+https://the-decoder.com/?p=41463
+4158873d220345e053e781fb51ca252fff001d13
+hf_model_nvidia/Qwen-Image-NVFP4
