@@ -307,3 +307,8 @@ https://the-decoder.com/?p=41504
 https://the-decoder.com/?p=41494
 7d8a98739984e60ca9480501cf2c370433bebfb8
 hf_model_nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000
+https://techcrunch.com/?p=3177396
+https://techcrunch.com/?p=3177414
+https://techcrunch.com/?p=3173266
+https://techcrunch.com/?p=3177406
+tag:github.com,2008:Repository/658928958/v0.40.4-rc2
