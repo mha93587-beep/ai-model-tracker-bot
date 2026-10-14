@@ -312,3 +312,5 @@ https://techcrunch.com/?p=3177414
 https://techcrunch.com/?p=3173266
 https://techcrunch.com/?p=3177406
 tag:github.com,2008:Repository/658928958/v0.40.4-rc2
+https://deepmind.google/blog/on-device-ai-scam-detection-mddi/
+tag:github.com,2008:Repository/658928958/v0.40.4
