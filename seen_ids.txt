@@ -314,3 +314,7 @@ https://techcrunch.com/?p=3177406
 tag:github.com,2008:Repository/658928958/v0.40.4-rc2
 https://deepmind.google/blog/on-device-ai-scam-detection-mddi/
 tag:github.com,2008:Repository/658928958/v0.40.4
+https://www.anthropic.com/news/singapore-office-opening
+https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic
+https://blogs.nvidia.com/?p=98835
+https://blogs.nvidia.com/?p=98818
