@@ -325,3 +325,16 @@ https://techcrunch.com/?p=3177088
 https://the-decoder.com/?p=41530
 https://the-decoder.com/?p=41524
 https://the-decoder.com/?p=41519
+https://openai.com/index/amp-beyond-coding
+https://openai.com/index/sentinelone
+https://openai.com/index/third-moment-research
+https://huggingface.co/blog/allenai/hiro-acev2
+e171b39a3994cf60cede0f83b63b3eeb1990c5b0
+https://techcrunch.com/?p=3177775
+https://techcrunch.com/?p=3175750
+https://techcrunch.com/?p=3177470
+https://techcrunch.com/?p=3177466
+https://techcrunch.com/?p=3177533
+https://the-decoder.com/?p=41540
+https://the-decoder.com/?p=41537
+tag:github.com,2008:Repository/658928958/v0.40.5-rc0
