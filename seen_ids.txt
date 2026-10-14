@@ -338,3 +338,8 @@ https://techcrunch.com/?p=3177533
 https://the-decoder.com/?p=41540
 https://the-decoder.com/?p=41537
 tag:github.com,2008:Repository/658928958/v0.40.5-rc0
+https://www.anthropic.com/news/2026-us-midterms
+https://techcrunch.com/?p=3177812
+https://the-decoder.com/?p=41548
+dde1e88f3c93eabd2dbb3913d365d085496d24b2
+hf_model_microsoft/UserRepGen-4B
