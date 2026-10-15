@@ -392,3 +392,11 @@ hf_model_black-forest-labs/flux-3-image-klein
 hf_model_black-forest-labs/flux-3-image-klein-base
 hf_model_nvidia/Nemotron-3.5-Rerank-8B-BF16
 hf_model_nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
+https://openai.com/index/introducing-the-rosalind-academic-plan
+https://huggingface.co/blog/ibm-granite/granite-switch-4-1
+https://techcrunch.com/?p=3178309
+https://techcrunch.com/?p=3178363
+https://techcrunch.com/?p=3178367
+hf_model_nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60
+hf_model_nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2
+hf_model_nvidia/Kimodo-SOMA-RP-v1.2
