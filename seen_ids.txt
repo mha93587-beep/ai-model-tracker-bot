@@ -352,3 +352,15 @@ https://techcrunch.com/?p=3177541
 https://techcrunch.com/?p=3177960
 https://the-decoder.com/?p=41553
 tag:github.com,2008:Repository/599547518/v0.32.0rc2
+https://openai.com/index/teaching-students-to-think-and-learn-through-questions
+https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes
+https://blogs.nvidia.com/?p=98870
+https://blogs.nvidia.com/?p=98912
+https://techcrunch.com/?p=3178088
+https://techcrunch.com/?p=3178027
+https://techcrunch.com/?p=3177560
+tag:github.com,2008:Repository/658928958/v0.40.5-rc1
+hf_model_nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
+hf_model_nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+hf_model_nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16
+hf_model_nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr
