@@ -405,3 +405,9 @@ https://techcrunch.com/?p=3178431
 hf_model_microsoft/scFM-dataselection
 https://huggingface.co/blog/nvidia/scaling-indic-pretraining
 hf_model_nvidia/Muse-Spark-Open-816B-A42B-DFlash2
+https://huggingface.co/blog/reflection-beam
+https://techcrunch.com/?p=3177529
+https://techcrunch.com/?p=3178541
+https://the-decoder.com/?p=41605
+https://the-decoder.com/?p=41607
+https://the-decoder.com/?p=41608
