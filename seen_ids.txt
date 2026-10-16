@@ -404,3 +404,4 @@ https://openai.com/index/sullivan-cromwell
 https://techcrunch.com/?p=3178431
 hf_model_microsoft/scFM-dataselection
 https://huggingface.co/blog/nvidia/scaling-indic-pretraining
+hf_model_nvidia/Muse-Spark-Open-816B-A42B-DFlash2
