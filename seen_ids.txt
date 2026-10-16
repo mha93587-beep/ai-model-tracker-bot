@@ -420,3 +420,7 @@ https://techcrunch.com/?p=3178711
 https://the-decoder.com/?p=41633
 https://the-decoder.com/?p=41627
 https://the-decoder.com/?p=41620
+https://openai.com/index/stack-overflow-chatgpt-plugin
+df0b1ae32a5ba63d5856db229a66706d4090e8ef
+https://techcrunch.com/?p=3178496
+tag:github.com,2008:Repository/658928958/v0.40.6-rc0
