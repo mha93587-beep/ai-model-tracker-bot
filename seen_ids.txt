@@ -400,3 +400,6 @@ https://techcrunch.com/?p=3178367
 hf_model_nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60
 hf_model_nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2
 hf_model_nvidia/Kimodo-SOMA-RP-v1.2
+https://openai.com/index/sullivan-cromwell
+https://techcrunch.com/?p=3178431
+hf_model_microsoft/scFM-dataselection
