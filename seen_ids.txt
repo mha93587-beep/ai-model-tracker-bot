@@ -437,3 +437,4 @@ https://the-decoder.com/?p=41659
 https://the-decoder.com/?p=41649
 https://the-decoder.com/?p=41533
 hf_model_deepseek-ai/DeepSeek-V4.1-Flash-1017
+https://the-decoder.com/?p=41667
