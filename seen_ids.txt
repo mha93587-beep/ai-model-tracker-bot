@@ -426,3 +426,9 @@ https://techcrunch.com/?p=3178496
 tag:github.com,2008:Repository/658928958/v0.40.6-rc0
 https://openai.com/index/itau-generative-ai
 tag:github.com,2008:Repository/658928958/v0.40.6-rc1
+tag:github.com,2008:Repository/658928958/v0.40.6
+tag:github.com,2008:Repository/599547518/v0.32.0rc3
+hf_model_nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4
+hf_model_nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8
+hf_model_nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+hf_model_nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
