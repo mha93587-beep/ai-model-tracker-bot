@@ -439,3 +439,5 @@ https://the-decoder.com/?p=41533
 hf_model_deepseek-ai/DeepSeek-V4.1-Flash-1017
 https://the-decoder.com/?p=41667
 https://blogs.nvidia.com/?p=99053
+https://www.anthropic.com/news/public-benefit-fund
+tag:github.com,2008:Repository/658928958/v0.40.7-rc0
