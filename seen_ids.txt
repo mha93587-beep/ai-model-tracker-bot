@@ -444,3 +444,4 @@ tag:github.com,2008:Repository/658928958/v0.40.7-rc0
 tag:github.com,2008:Repository/599547518/v0.32.1rc0
 tag:github.com,2008:Repository/599547518/v0.32.0
 hf_model_microsoft/Sentiment-Analysis-7B
+hf_model_nvidia/cosmos3-nano-libero10-sdg-export-S2_s43
