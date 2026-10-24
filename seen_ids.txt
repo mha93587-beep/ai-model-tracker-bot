@@ -467,3 +467,5 @@ https://blogs.nvidia.com/?p=99404
 https://openai.com/index/decisions-api
 8dd8e6bc35ad32eff8fd57bbe04f9c56274f46ed
 hf_model_nvidia/InternVideo2-CLIP-anomaly-detection
+https://huggingface.co/blog/microsoft/thinkingbox-training
+7ce6bf5eb7b5d26b8ad5cb6ced771ac43468759d
