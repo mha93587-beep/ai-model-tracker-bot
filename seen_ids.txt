@@ -474,3 +474,8 @@ https://huggingface.co/blog/torch-neuronx-model-support
 https://blogs.nvidia.com/?p=99413
 https://openai.com/index/securing-our-frontier-model-training-environment
 tag:github.com,2008:Repository/658928958/v0.40.10-rc0
+https://huggingface.co/blog/allenai/litpivot
+99e1f40843e42eddcc6ecfc9f758bee6b1d7c9a3
+b00ee9ac34cfc25b65e7db16ebf768122bad4a1b
+b1f9be62942b6b77e09ee44eda01d25e5a58cfc4
+tag:github.com,2008:Repository/658928958/v0.40.10
