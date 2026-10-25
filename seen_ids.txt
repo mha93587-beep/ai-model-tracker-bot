@@ -472,3 +472,5 @@ https://huggingface.co/blog/microsoft/thinkingbox-training
 https://openai.com/index/openai-nask-ai-safety-security-partnership
 https://huggingface.co/blog/torch-neuronx-model-support
 https://blogs.nvidia.com/?p=99413
+https://openai.com/index/securing-our-frontier-model-training-environment
+tag:github.com,2008:Repository/658928958/v0.40.10-rc0
