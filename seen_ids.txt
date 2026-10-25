@@ -469,3 +469,5 @@ https://openai.com/index/decisions-api
 hf_model_nvidia/InternVideo2-CLIP-anomaly-detection
 https://huggingface.co/blog/microsoft/thinkingbox-training
 7ce6bf5eb7b5d26b8ad5cb6ced771ac43468759d
+https://openai.com/index/openai-nask-ai-safety-security-partnership
+https://huggingface.co/blog/torch-neuronx-model-support
