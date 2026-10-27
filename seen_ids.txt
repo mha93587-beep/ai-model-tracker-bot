@@ -483,3 +483,6 @@ d4a0021627e124e1cbf32bd2a1426e1abfda6b33
 tag:github.com,2008:Repository/658928958/v0.40.11-rc0
 hf_model_nvidia/MotionBricks
 tag:github.com,2008:Repository/658928958/v0.40.9
+tag:github.com,2008:Repository/658928958/v0.40.11
+hf_model_microsoft/CogACT-v2-RoboDojo
+hf_model_BAAI/MS-Human-700
