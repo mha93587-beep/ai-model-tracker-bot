@@ -501,3 +501,5 @@ https://blogs.microsoft.com/?p=52563192
 https://blogs.nvidia.com/?p=99512
 tag:github.com,2008:Repository/658928958/v0.40.12-rc1
 hf_model_mistralai/Mistral-Large-4-1T-A52B-NVFP4
+tag:github.com,2008:Repository/658928958/v0.40.12
+hf_model_nvidia/Metatron-v1
