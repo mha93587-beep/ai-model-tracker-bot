@@ -494,3 +494,10 @@ hf_model_stabilityai/sdxl-base-amdnpu-medusa
 hf_model_stabilityai/stable-diffusion-3.5-medium-amdnpu-medusa
 tag:github.com,2008:Repository/658928958/v0.40.12-rc0
 https://openai.com/index/oracle-apps-in-chatgpt
+https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+https://openai.com/index/retell-ai
+https://engineering.fb.com/?p=24851
+https://blogs.microsoft.com/?p=52563192
+https://blogs.nvidia.com/?p=99512
+tag:github.com,2008:Repository/658928958/v0.40.12-rc1
+hf_model_mistralai/Mistral-Large-4-1T-A52B-NVFP4
