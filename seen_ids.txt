@@ -503,3 +503,6 @@ tag:github.com,2008:Repository/658928958/v0.40.12-rc1
 hf_model_mistralai/Mistral-Large-4-1T-A52B-NVFP4
 tag:github.com,2008:Repository/658928958/v0.40.12
 hf_model_nvidia/Metatron-v1
+https://openai.com/index/openai-servicenow-partnership-expansion
+https://openai.com/index/the-future-of-the-firm
+tag:github.com,2008:Repository/599547518/v0.33.0rc1
