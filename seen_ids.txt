@@ -512,3 +512,6 @@ https://blogs.microsoft.com/?p=52563236
 https://blogs.nvidia.com/?p=99523
 tag:github.com,2008:Repository/658928958/v0.40.13-rc0
 tag:github.com,2008:Repository/658928958/v0.40.13-rc1
+https://huggingface.co/blog/announcing-project-protostar
+https://huggingface.co/blog/mistral-large4
+https://huggingface.co/blog/anydecisionmodel
