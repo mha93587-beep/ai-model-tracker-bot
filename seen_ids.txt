@@ -533,3 +533,5 @@ https://huggingface.co/blog/nvidia/nemotron-halloween
 41aec09d2cbe015b77317f1301154eea531d9cf8
 698175f4da06f51671986617198b154f2e828670
 hf_model_nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
+5542e879e541b56f1c06a9f2c71c7c3f37f6d5e3
+f7fa53db3341459d6a27841fb8632835488a9c38
