@@ -522,3 +522,4 @@ https://blogs.nvidia.com/?p=99565
 https://openai.com/index/updated-model-spec
 https://engineering.fb.com/?p=24907
 106cb441d765c495deeab0901e357357287aed51
+https://openai.com/index/fair-use-benefits-everyone
