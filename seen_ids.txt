@@ -536,3 +536,4 @@ hf_model_nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
 5542e879e541b56f1c06a9f2c71c7c3f37f6d5e3
 f7fa53db3341459d6a27841fb8632835488a9c38
 tag:github.com,2008:Repository/599547518/v0.33.0rc3
+https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/
