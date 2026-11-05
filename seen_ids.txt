@@ -545,3 +545,6 @@ hf_model_sarvamai/prism
 https://huggingface.co/blog/cwe-bench
 https://huggingface.co/blog/transformers-mic
 tag:github.com,2008:Repository/658928958/v0.40.14-rc0
+https://blogs.nvidia.com/?p=99615
+tag:github.com,2008:Repository/658928958/v0.40.14
+hf_model_BAAI/PingPongRealWorldRL
