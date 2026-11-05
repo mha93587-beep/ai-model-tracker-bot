@@ -542,3 +542,6 @@ hf_model_microsoft/UserLM-2.0
 https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/
 a75ee10f33f51c28e1b3189dc509cb78f1c8eaa7
 hf_model_sarvamai/prism
+https://huggingface.co/blog/cwe-bench
+https://huggingface.co/blog/transformers-mic
+tag:github.com,2008:Repository/658928958/v0.40.14-rc0
