@@ -548,3 +548,8 @@ tag:github.com,2008:Repository/658928958/v0.40.14-rc0
 https://blogs.nvidia.com/?p=99615
 tag:github.com,2008:Repository/658928958/v0.40.14
 hf_model_BAAI/PingPongRealWorldRL
+https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/
+https://huggingface.co/blog/allenai/statebench
+https://huggingface.co/blog/ibm-research/palette-deck-building
+https://blogs.nvidia.com/?p=99605
+tag:github.com,2008:Repository/658928958/v0.40.15-rc0
