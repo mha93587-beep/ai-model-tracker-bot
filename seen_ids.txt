@@ -564,3 +564,7 @@ https://blog.google/innovation-and-ai/technology/developers-tools/introducing-ge
 https://openai.com/index/australian-universities-ai-native-graduates
 https://blogs.nvidia.com/?p=99663
 https://blogs.nvidia.com/?p=99648
+https://openai.com/index/cultfit-builds-with-codex
+https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation
+https://blogs.nvidia.com/?p=99689
+tag:github.com,2008:Repository/658928958/v0.40.15-rc2
