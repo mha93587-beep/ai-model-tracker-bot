@@ -559,3 +559,8 @@ https://huggingface.co/blog/phonon-tts
 tag:github.com,2008:Repository/658928958/v0.40.15-rc1
 https://openai.com/index/introducing-gpt-6-cyber
 hf_model_nvidia/MetricTrail
+https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/
+https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/
+https://openai.com/index/australian-universities-ai-native-graduates
+https://blogs.nvidia.com/?p=99663
+https://blogs.nvidia.com/?p=99648
