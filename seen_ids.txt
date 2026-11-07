@@ -556,3 +556,4 @@ tag:github.com,2008:Repository/658928958/v0.40.15-rc0
 https://huggingface.co/blog/Dharma-AI/dharma-field-extractor
 https://huggingface.co/blog/phonon-tts
 7d30dbf9b73fcfe8e471c3e83d1f2ee69b4b3343
+tag:github.com,2008:Repository/658928958/v0.40.15-rc1
