@@ -573,3 +573,10 @@ https://huggingface.co/blog/open-asr-leaderboard-liva
 tag:github.com,2008:Repository/658928958/v0.40.15
 https://openai.com/index/partnering-with-hacktron
 https://huggingface.co/blog/allenai/toyblocks
+45834970ac5a8ce39a39de22bbc2ae33f7618139
+755c7d8248913b9c1698eceff615a3e12637e5e9
+64b64349a40669287b5c781082e75c92e2cc9153
+568f99493ce9fc7f0fbe42c57947610f9ca4666c
+c0f0c6e1e028e85f24cb91645e1a321ffca6e02a
+https://blogs.nvidia.com/?p=99702
+https://techcrunch.com/?p=3185905
