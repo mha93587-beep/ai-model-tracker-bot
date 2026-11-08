@@ -571,3 +571,5 @@ tag:github.com,2008:Repository/658928958/v0.40.15-rc2
 https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science
 https://huggingface.co/blog/open-asr-leaderboard-liva
 tag:github.com,2008:Repository/658928958/v0.40.15
+https://openai.com/index/partnering-with-hacktron
+https://huggingface.co/blog/allenai/toyblocks
