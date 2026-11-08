@@ -568,3 +568,5 @@ https://openai.com/index/cultfit-builds-with-codex
 https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation
 https://blogs.nvidia.com/?p=99689
 tag:github.com,2008:Repository/658928958/v0.40.15-rc2
+https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science
+https://huggingface.co/blog/open-asr-leaderboard-liva
