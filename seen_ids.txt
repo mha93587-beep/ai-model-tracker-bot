@@ -580,3 +580,5 @@ https://huggingface.co/blog/allenai/toyblocks
 c0f0c6e1e028e85f24cb91645e1a321ffca6e02a
 https://blogs.nvidia.com/?p=99702
 https://techcrunch.com/?p=3185905
+https://techcrunch.com/?p=3186051
+https://techcrunch.com/?p=3186034
