@@ -585,3 +585,5 @@ https://techcrunch.com/?p=3186034
 tag:github.com,2008:Repository/658928958/v0.40.16-rc0
 tag:github.com,2008:Repository/599547518/v0.34.0rc0
 https://openai.com/index/gilbert-tobin-sam-nickless
+https://blogs.nvidia.com/?p=99744
+https://blogs.nvidia.com/?p=99712
