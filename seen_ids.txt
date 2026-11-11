@@ -587,3 +587,7 @@ tag:github.com,2008:Repository/599547518/v0.34.0rc0
 https://openai.com/index/gilbert-tobin-sam-nickless
 https://blogs.nvidia.com/?p=99744
 https://blogs.nvidia.com/?p=99712
+https://blog.google/innovation-and-ai/technology/developers-tools/build-google-maps-platform-ai-studio/
+https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan
+https://blogs.nvidia.com/?p=99751
+92fb165d30993e71e0cdd70801398f45f9518c7d
