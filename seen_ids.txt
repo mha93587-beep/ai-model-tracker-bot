@@ -608,3 +608,7 @@ hf_model_nvidia/Kimi-K3.1-Pro-NVFP4
 https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/
 https://huggingface.co/blog/qvac/botpsy
 https://blogs.nvidia.com/?p=99833
+https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/
+https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/
+https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/
+https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/
