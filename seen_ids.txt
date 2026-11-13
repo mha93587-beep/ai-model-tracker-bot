@@ -605,3 +605,6 @@ https://blog.google/products-and-platforms/platforms/android/gemini-intelligence
 tag:github.com,2008:Repository/658928958/v0.40.17-rc0
 https://huggingface.co/blog/token-pooling
 hf_model_nvidia/Kimi-K3.1-Pro-NVFP4
+https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/
+https://huggingface.co/blog/qvac/botpsy
+https://blogs.nvidia.com/?p=99833
