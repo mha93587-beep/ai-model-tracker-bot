@@ -603,3 +603,5 @@ https://blog.google/products-and-platforms/products/registry/new-google-domains-
 https://blogs.nvidia.com/?p=99797
 https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/
 tag:github.com,2008:Repository/658928958/v0.40.17-rc0
+https://huggingface.co/blog/token-pooling
+hf_model_nvidia/Kimi-K3.1-Pro-NVFP4
