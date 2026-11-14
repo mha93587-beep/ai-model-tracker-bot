@@ -615,3 +615,5 @@ https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/
 c0bd049236369d601a6a4b54035a912339948df0
 tag:github.com,2008:Repository/599547518/v0.34.0rc1
 https://huggingface.co/blog/3d-lora-finetuning
+https://openai.com/business/customer-stories/holidays-extras-codex
+tag:github.com,2008:Repository/599547518/v0.34.0rc2
