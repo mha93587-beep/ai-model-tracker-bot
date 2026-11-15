@@ -630,3 +630,6 @@ https://openai.com/index/introducing-chatgpt-wallet
 https://openai.com/business/customer-stories/shield
 https://huggingface.co/blog/ggml-org/llama-cpp-v1
 https://blogs.nvidia.com/?p=99829
+https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place
+https://huggingface.co/blog/allenai/xybench
+62c3e92270a83395aaeaae770a977c92ced34043
