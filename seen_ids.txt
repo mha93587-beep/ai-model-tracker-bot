@@ -626,3 +626,7 @@ https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gem
 https://openai.com/business/customer-stories/amplitude
 https://blogs.microsoft.com/?p=52563237
 https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite
+https://openai.com/index/introducing-chatgpt-wallet
+https://openai.com/business/customer-stories/shield
+https://huggingface.co/blog/ggml-org/llama-cpp-v1
+https://blogs.nvidia.com/?p=99829
