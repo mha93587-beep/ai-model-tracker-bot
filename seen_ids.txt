@@ -633,3 +633,9 @@ https://blogs.nvidia.com/?p=99829
 https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place
 https://huggingface.co/blog/allenai/xybench
 62c3e92270a83395aaeaae770a977c92ced34043
+https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/
+760cbc8b70c56b832a6d83eb6dfab47ce2fe8a3b
+f4831ed5c33ec5088dfe090f067c6a3a1c207b47
+31a4c32eac66b0c9392f69ee418d5e09aecaf4e5
+4dea8ce77a40d45986adf65199b169c60e84bcc1
+tag:github.com,2008:Repository/599547518/v0.34.0rc3
