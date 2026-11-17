@@ -640,3 +640,7 @@ f4831ed5c33ec5088dfe090f067c6a3a1c207b47
 4dea8ce77a40d45986adf65199b169c60e84bcc1
 tag:github.com,2008:Repository/599547518/v0.34.0rc3
 tag:github.com,2008:Repository/599547518/v0.34.0rc4
+hf_model_nvidia/Nemotron-Labs-Sigma-distill-spec-3B
+hf_model_nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16
+hf_model_nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8
+hf_model_nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4
