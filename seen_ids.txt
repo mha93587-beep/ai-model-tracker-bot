@@ -644,3 +644,8 @@ hf_model_nvidia/Nemotron-Labs-Sigma-distill-spec-3B
 hf_model_nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16
 hf_model_nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8
 hf_model_nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4
+hf_model_sarvamai/sarvam-105b-1711
+hf_model_sarvamai/sarvam-105b-1711-bf16
+hf_model_nvidia/Llama-3.2-1B-Qwen3.8-27B-Draft
+hf_model_nvidia/Qwen3.5-0.8B-Qwen3.8-27B-Draft
+hf_model_nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft
