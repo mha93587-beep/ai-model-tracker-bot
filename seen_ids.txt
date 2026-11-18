@@ -655,3 +655,8 @@ https://blogs.nvidia.com/?p=99949
 hf_model_stabilityai/sdxl-turbo-amdnpu-medusa
 hf_model_apple/FastFrames-S
 hf_model_apple/FastFrames-L
+https://blogs.nvidia.com/?p=100038
+https://blogs.nvidia.com/?p=100011
+c84e831e813aae9c114a1c7179100aac35ea0ad7
+tag:github.com,2008:Repository/658928958/v0.40.17-rc1
+hf_model_black-forest-labs/hf-spaces-moderation-client
