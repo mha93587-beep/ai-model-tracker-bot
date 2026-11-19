@@ -661,3 +661,7 @@ c84e831e813aae9c114a1c7179100aac35ea0ad7
 tag:github.com,2008:Repository/658928958/v0.40.17-rc1
 hf_model_black-forest-labs/hf-spaces-moderation-client
 https://blogs.nvidia.com/?p=100058
+https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/
+https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2-technical-report/
+https://blogs.microsoft.com/?p=52563191
+8792b36d1af1b35d715874ec8395260652442a9e
