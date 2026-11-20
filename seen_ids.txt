@@ -665,3 +665,7 @@ https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-n
 https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2-technical-report/
 https://blogs.microsoft.com/?p=52563191
 8792b36d1af1b35d715874ec8395260652442a9e
+https://huggingface.co/blog/moe-expert-streaming
+https://huggingface.co/blog/rumble-2-flash
+hf_model_apple/DepthPro2-coreml
+hf_model_apple/DepthPro2-H
