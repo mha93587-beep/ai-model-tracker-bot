@@ -669,3 +669,10 @@ https://huggingface.co/blog/moe-expert-streaming
 https://huggingface.co/blog/rumble-2-flash
 hf_model_apple/DepthPro2-coreml
 hf_model_apple/DepthPro2-H
+https://deepmind.google/blog/genie-4-is-now-available/
+https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/
+https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time
+https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse
+https://blogs.nvidia.com/?p=100079
+hf_model_microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU
+hf_model_microsoft/Aion-1.0-Instruct-2.3B
