@@ -681,3 +681,4 @@ https://openai.com/business/learn/codex-security-plugin-demo
 https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin
 30ec3c38ceea489c2a4f7184696062c55b87e28d
 tag:github.com,2008:Repository/599547518/v0.34.0
+https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast
