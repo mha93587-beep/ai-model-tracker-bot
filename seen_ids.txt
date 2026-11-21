@@ -683,3 +683,8 @@ https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-
 tag:github.com,2008:Repository/599547518/v0.34.0
 https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast
 https://blogs.nvidia.com/?p=100100
+https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/
+https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/
+https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/
+https://blogs.nvidia.com/?p=100047
+hf_model_apple/DepthPro2-focal
