@@ -676,3 +676,8 @@ https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse
 https://blogs.nvidia.com/?p=100079
 hf_model_microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU
 hf_model_microsoft/Aion-1.0-Instruct-2.3B
+https://deepmind.google/blog/introducing-gemini-4-neon/
+https://openai.com/business/learn/codex-security-plugin-demo
+https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin
+30ec3c38ceea489c2a4f7184696062c55b87e28d
+tag:github.com,2008:Repository/599547518/v0.34.0
