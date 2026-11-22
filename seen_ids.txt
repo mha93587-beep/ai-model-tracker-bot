@@ -688,3 +688,8 @@ https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/
 https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/
 https://blogs.nvidia.com/?p=100047
 hf_model_apple/DepthPro2-focal
+https://openai.com/business/customer-stories/hebbia
+https://openai.com/index/introducing-medchembench
+https://huggingface.co/blog/inkling2mini
+https://huggingface.co/blog/harness-adapters-at-scale
+tag:github.com,2008:Repository/658928958/v0.40.17-rc2
