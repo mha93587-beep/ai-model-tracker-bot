@@ -693,3 +693,4 @@ https://openai.com/index/introducing-medchembench
 https://huggingface.co/blog/inkling2mini
 https://huggingface.co/blog/harness-adapters-at-scale
 tag:github.com,2008:Repository/658928958/v0.40.17-rc2
+https://openai.com/index/combatting-adversarial-distillation
