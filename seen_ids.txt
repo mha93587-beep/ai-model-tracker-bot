@@ -695,3 +695,8 @@ https://huggingface.co/blog/harness-adapters-at-scale
 tag:github.com,2008:Repository/658928958/v0.40.17-rc2
 https://openai.com/index/combatting-adversarial-distillation
 tag:github.com,2008:Repository/658928958/v0.40.17-rc3
+02c52259bc83b8aa57b8410eb8c813a22ed5fd28
+d7bdb91bc1e6b32644ddf96aa43ed4840d83f174
+d2380cae67e4f5d5655c6b63e914ed4170fdafd6
+7d1155e7ae64ab335a37cde382657a457dce3267
+tag:github.com,2008:Repository/658928958/v0.40.17-rc4
