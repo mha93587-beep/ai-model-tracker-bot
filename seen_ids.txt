@@ -701,3 +701,4 @@ d2380cae67e4f5d5655c6b63e914ed4170fdafd6
 7d1155e7ae64ab335a37cde382657a457dce3267
 tag:github.com,2008:Repository/658928958/v0.40.17-rc4
 tag:github.com,2008:Repository/658928958/v0.40.17
+https://openai.com/index/perplexity-and-intelligence
