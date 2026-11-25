@@ -704,3 +704,4 @@ tag:github.com,2008:Repository/658928958/v0.40.17
 https://openai.com/index/perplexity-and-intelligence
 2f499b0fad46f2d46fc1c337c454cd6adc7edd47
 hf_model_nvidia/MiMo-V2.6-Flash-RL-NVFP4
+https://huggingface.co/blog/agentic-evals
