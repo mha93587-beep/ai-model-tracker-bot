@@ -705,3 +705,8 @@ https://openai.com/index/perplexity-and-intelligence
 2f499b0fad46f2d46fc1c337c454cd6adc7edd47
 hf_model_nvidia/MiMo-V2.6-Flash-RL-NVFP4
 https://huggingface.co/blog/agentic-evals
+https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/
+https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/
+https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/
+https://blogs.nvidia.com/?p=100141
+hf_model_nvidia/Nemotron-3.5-Rerank-1B-BF16
