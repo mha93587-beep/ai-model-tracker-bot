@@ -710,3 +710,7 @@ https://blog.google/products-and-platforms/products/search/google-search-persona
 https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/
 https://blogs.nvidia.com/?p=100141
 hf_model_nvidia/Nemotron-3.5-Rerank-1B-BF16
+https://openai.com/business/customer-stories/intentful-dots
+https://openai.com/business/customer-stories/ifood
+https://openai.com/business/customer-stories/clay-plugins-openai
+tag:github.com,2008:Repository/658928958/v0.40.18-rc0
