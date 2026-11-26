@@ -714,3 +714,9 @@ https://openai.com/business/customer-stories/intentful-dots
 https://openai.com/business/customer-stories/ifood
 https://openai.com/business/customer-stories/clay-plugins-openai
 tag:github.com,2008:Repository/658928958/v0.40.18-rc0
+https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/
+https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities
+https://openai.com/index/searching-for-distant-planets-with-astra
+76b2285b501c3518d9f413fc227aa9b97a5e6b72
+tag:github.com,2008:Repository/658928958/v0.40.18
+tag:github.com,2008:Repository/599547518/v0.34.1rc0
