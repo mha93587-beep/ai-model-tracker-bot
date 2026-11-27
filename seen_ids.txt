@@ -722,3 +722,7 @@ tag:github.com,2008:Repository/658928958/v0.40.18
 tag:github.com,2008:Repository/599547518/v0.34.1rc0
 https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/
 c2ba2dc45c5f6d0f3d50ffb444e6dae226deff4f
+https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents
+https://techcrunch.com/?p=3192614
+https://techcrunch.com/?p=3192524
+https://techcrunch.com/?p=3192475
