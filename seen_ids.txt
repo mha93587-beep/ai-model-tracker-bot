@@ -726,3 +726,4 @@ https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents
 https://techcrunch.com/?p=3192614
 https://techcrunch.com/?p=3192524
 https://techcrunch.com/?p=3192475
+https://huggingface.co/blog/training-swarms
