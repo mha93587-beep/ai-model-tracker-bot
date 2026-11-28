@@ -727,3 +727,10 @@ https://techcrunch.com/?p=3192614
 https://techcrunch.com/?p=3192524
 https://techcrunch.com/?p=3192475
 https://huggingface.co/blog/training-swarms
+https://huggingface.co/blog/ggml-org/llamacpp-amd-bench
+https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin
+tag:github.com,2008:Repository/658928958/v0.40.19-rc0
+hf_model_BAAI/Innata-0-WAM-RoboDojo
+hf_model_BAAI/Innata-0-WAM-RoboCasa365
+hf_model_BAAI/Innata-0-Understanding
+hf_model_BAAI/Innata-0-ACWM
